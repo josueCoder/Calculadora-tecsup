@@ -11,13 +11,13 @@
 <body class="bg-dark  text-center py-5">
     <main class="container">
         <h1 class="text-warning">Calculadora TECSUP</h1>
-        <form>
+        <form class="py-2">
             <div class="form-floating mb-3">
                 <input type="number" class="form-control" id="txtNumero1" placeholder="Numero1">
                 <label for="floatingInput">Numero 1</label>
               </div>
               <select class="form-select mb-3" aria-label="Default select example" id="operador">
-                <option selected>seleccione el operador</option>
+               
                 <option value="+">+</option>
                 <option value="-">-</option>
                 <option value="*">*</option>
@@ -28,8 +28,8 @@
                 <label for="floatingPassword">Numero 2</label>
               </div>
               
-            
-            <button type="submit" class="btn btn-primary w-100 mb-3" id="btnCalular">Submit</button>
+            <div class="badge bg-danger  mb-3 " id="contenedorError"></div>
+            <button type="button" class="btn btn-primary w-100 mb-3" id="btnCalcular">Submit</button>
             <div class="bg-success text-white  fs-2  fw-bold" id="contenedorResultado"></div>
           </form>
     </main>
